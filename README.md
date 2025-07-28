@@ -9,6 +9,9 @@ Projeto de estudo desenvolvido durante o curso de Node.js do canal **Dicas Para 
 ```
 curso-nodejs-dicasparadevs
 ├── .gitignore
+├── assets
+│   ├── homepage.png
+│   └── navbar.png
 ├── index.js
 ├── modules
 │   ├── express.js
@@ -20,6 +23,7 @@ curso-nodejs-dicasparadevs
 ├── package-lock.json
 ├── package.json
 ├── person.js
+├── README.md
 └── src
     ├── database
     │   └── connect.js
