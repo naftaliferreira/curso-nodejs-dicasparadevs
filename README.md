@@ -1,17 +1,47 @@
-# 🚀 Curso Node.js - DicasParaDevs
+# 📚 Projeto Node.js - Curso DicasParaDevs
 
-Projeto de estudo desenvolvido durante o curso de Node.js do canal **Dicas Para Devs**. O objetivo é aprender os fundamentos do Node.js com foco em módulos nativos, estrutura MVC, uso do Express e EJS.
+Este repositório contém os códigos desenvolvidos durante o curso de Node.js do canal **Dicas Para Devs**, com fins exclusivamente educacionais. O projeto abrange os principais conceitos de desenvolvimento backend com Node.js e exemplos práticos utilizando `fs`, `http`, `express`, banco de dados, templates com EJS e organização de arquivos.
 
 ---
 
-## 📁 Estrutura do Projeto
+## 🚀 Tecnologias Utilizadas
+
+- Node.js
+- Express.js
+- File System (fs)
+- HTTP Module
+- Path Module
+- EJS (Embedded JavaScript)
+- MongoDB (com Mongoose)
+- JavaScript ES6+
+
+---
+
+## 📦 Instalação e Execução
+
+> Pré-requisitos: Node.js instalado
 
 ```
-curso-nodejs-dicasparadevs
+# Clone o repositório
+git clone https://github.com/usuario/curso-nodejs-dicasparadevs.git
+
+# Acesse a pasta do projeto
+cd curso-nodejs-dicasparadevs
+
+# Instale as dependências
+npm install
+
+# Execute o projeto
+node index.js
+```
+
+--- 
+
+## Estrutura de pastas
+
+```
+curso-nodejs-dicasparadevs-main
 ├── .gitignore
-├── assets
-│   ├── homepage.png
-│   └── navbar.png
 ├── index.js
 ├── modules
 │   ├── express.js
@@ -34,62 +64,76 @@ curso-nodejs-dicasparadevs
         └── partials
             ├── head.ejs
             └── navbar.ejs
+
 ```
 
+## 🔧 Dependências
+
+Trecho do package.json:
+
+```
+"dependencies": {
+  "ejs": "^3.1.9",
+  "express": "^4.18.2",
+  "mongoose": "^7.6.1"
+}
+```
+
+--- 
+## ✍️ Comentários no Código
+O projeto possui comentários explicativos nos arquivos principais. **Exemplo:**
+
+```
+// Cria um servidor HTTP simples
+const http = require('http');
+
+http.createServer((req, res) => {
+  res.end("Servidor Node.js funcionando!");
+}).listen(3000);
+
+```
+
+```
+// Conexão com MongoDB usando Mongoose
+const mongoose = require("mongoose");
+
+mongoose.connect("mongodb://localhost:27017/nome-do-banco")
+  .then(() => console.log("Conectado ao MongoDB"))
+  .catch((err) => console.error("Erro na conexão:", err));
+
+```
 
 ---
 
-## 🧪 Funcionalidades Aprendidas
+## 📘 O Que Foi Aprendido
+Durante o curso, foram abordados os seguintes tópicos:
 
-- Manipulação de arquivos com `fs`
-- Criação de servidores com `http`
-- Uso de rotas básicas com `express`
-- Template engine com `EJS`
-- Modularização e separação de responsabilidades
-- Organização MVC simplificada
+* Conceitos fundamentais do Node.js
+
+* Criação de servidores com o módulo http
+
+* Manipulação de arquivos com o módulo fs
+
+* Utilização do path para lidar com diretórios
+
+* Criação de servidores com Express.js
+
+* Templates dinâmicos com EJS
+
+* Organização em módulos e pastas
+
+* Conexão com banco de dados MongoDB via Mongoose
+
+* Criação de modelos de dados (ex: usuário)
+
+---
+## 📌 Notas Finais
+Este projeto foi construído com o propósito de aprendizado. Não é recomendado para uso em produção sem adaptações de segurança, validações e estrutura adequada.
+
+--- 
+
+🧠 Créditos
+Curso baseado nas aulas do canal [Dicas Para Devs](https://www.youtube.com/@dicasparadevs).
 
 ---
 
-## 🛠 Tecnologias Utilizadas
-
-- Node.js
-- Express
-- EJS
-- JavaScript
-
----
-
-## ▶️ Como executar o projeto
-
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/naftaliferreira/curso-nodejs-dicasparadevs.git
-cd curso-nodejs-dicasparadevs
-```
-
-2. Instale as dependências:
-```
-npm install
-```
-
-3. Execute a aplicação:
-```
-node index.js
-```
-**Acesse via navegador:** http://localhost:8080
-
-## 🖼️ Demonstração
-
-![Tela Inicial](./assets/homepage.png)
-
-
-
-
-### 🧠 Créditos
-Curso por: DicasParaDevs - YouTube
-
-### 📬 Contato
-[GitHub](https://github.com/naftaliferreira)
-
-[LinkedIn](https://www.linkedin.com/in/naftali-ferreira/)
